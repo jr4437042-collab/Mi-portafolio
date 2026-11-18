@@ -1,0 +1,485 @@
+
+/* =================================
+   CONFIGURACIÓN GENERAL
+================================= */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Segoe UI', Arial, sans-serif;
+    background-color: #f8f9ff;
+    color: #252542;
+    line-height: 1.6;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+section {
+    padding: 80px 10%;
+    scroll-margin-top: 75px;
+}
+
+section h2 {
+    text-align: center;
+    font-size: 36px;
+    color: #4338ca;
+    margin-bottom: 35px;
+}
+
+/* =================================
+   NAVEGACIÓN
+================================= */
+
+.navbar {
+    background: #171735 !important;
+    padding: 15px 0;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.15);
+}
+
+.navbar-brand {
+    color: #a78bfa !important;
+    font-size: 25px;
+}
+
+.navbar .nav-link {
+    color: white !important;
+    transition: 0.3s;
+}
+
+.navbar .nav-link:hover {
+    color: #f472b6 !important;
+}
+
+#themeToggle {
+    border-radius: 25px;
+    padding: 8px 16px;
+}
+
+/* =================================
+   PORTADA PRINCIPAL
+================================= */
+
+.hero {
+    min-height: 100vh;
+    background: linear-gradient(135deg, #171735, #4338ca, #7c3aed);
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 120px 20px 60px;
+}
+
+.hero h1 {
+    font-size: 55px;
+    font-weight: bold;
+    color: white;
+    margin-bottom: 20px;
+}
+
+.hero p {
+    font-size: 19px;
+    max-width: 650px;
+    margin: 0 auto 25px;
+    color: #e9e7ff;
+}
+
+.profile-photo {
+    width: 220px;
+    height: 220px;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 5px solid #f472b6;
+    margin-bottom: 25px;
+}
+
+/* =================================
+   BOTONES
+================================= */
+
+.btn {
+    border-radius: 30px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.btn:hover {
+    transform: translateY(-4px);
+}
+
+.btn-primary {
+    background: linear-gradient(90deg, #4338ca, #a78bfa);
+    border: none;
+    color: white;
+}
+
+.btn-primary:hover {
+    background: linear-gradient(90deg, #ec4899, #7c3aed);
+}
+
+.hero .btn-light {
+    background: linear-gradient(90deg, #f472b6, #a78bfa);
+    color: white;
+    border: none;
+    padding: 14px 30px;
+}
+
+/* =================================
+   SOBRE MÍ
+================================= */
+
+#sobre-mi {
+    background: white;
+    text-align: center;
+}
+
+#sobre-mi .description {
+    max-width: 800px;
+    margin: auto;
+    color: #62627d;
+    font-size: 18px;
+    line-height: 1.9;
+}
+
+#sobre-mi .row h4 {
+    margin-top: 15px;
+    color: #4338ca;
+}
+
+#sobre-mi .row p {
+    color: #62627d;
+}
+
+/* =================================
+   PROYECTOS
+================================= */
+
+#proyectos {
+    background: #f0edff;
+}
+
+.project-card {
+    background: white;
+    border: 1px solid #e4ddff;
+    border-radius: 18px;
+    overflow: hidden;
+    transition: 0.3s;
+    box-shadow: 0 5px 15px rgba(67,56,202,0.08);
+}
+
+.project-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 12px 25px rgba(67,56,202,0.18);
+}
+
+.project-card img {
+    height: 210px;
+    object-fit: cover;
+}
+
+.project-card h5 {
+    color: #7c3aed;
+    font-weight: bold;
+}
+
+.project-card p {
+    color: #62627d;
+}
+
+/* =================================
+   EXPERIENCIA
+================================= */
+
+#experiencia {
+    background: white;
+}
+
+.experience-card {
+    height: 100%;
+    background: #f8f7ff;
+    padding: 30px 20px;
+    text-align: center;
+    border-radius: 18px;
+    border: 1px solid #e4ddff;
+    transition: 0.3s;
+}
+
+.experience-card:hover {
+    transform: translateY(-7px);
+    box-shadow: 0 10px 25px rgba(67,56,202,0.15);
+}
+
+.experience-card i {
+    color: #7c3aed;
+    margin-bottom: 20px;
+}
+
+.experience-card h4 {
+    color: #4338ca;
+    margin-bottom: 15px;
+}
+
+.experience-card p {
+    color: #62627d;
+}
+
+/* =================================
+   CONTACTO
+================================= */
+
+#contacto {
+    background: linear-gradient(135deg, #171735, #4338ca);
+    color: white;
+    text-align: center;
+}
+
+#contacto h2 {
+    color: #f472b6;
+}
+
+#contacto p {
+    color: #e9e7ff;
+    margin: 12px 0;
+}
+
+.contact-form {
+    max-width: 550px;
+    margin: 30px auto;
+}
+
+.contact-form .form-control {
+    padding: 13px;
+    border-radius: 10px;
+    border: 1px solid #ddd;
+}
+
+.contact-form textarea {
+    resize: vertical;
+}
+
+.social-link {
+    display: inline-block;
+    color: #f472b6;
+    font-size: 30px;
+    margin: 10px;
+    transition: 0.3s;
+}
+
+.social-link:hover {
+    color: white;
+    transform: translateY(-5px);
+}
+
+/* =================================
+   PIE DE PÁGINA
+================================= */
+
+footer {
+    background: #11112b;
+    color: #d8d5ff;
+    padding: 25px;
+}
+
+footer p {
+    margin: 0;
+}
+
+/* =================================
+   MODO OSCURO
+================================= */
+
+body.dark-mode {
+    background-color: #121225 !important;
+    color: #ffffff !important;
+}
+
+/* Navegación */
+body.dark-mode .navbar {
+    background: #080817 !important;
+}
+
+/* Portada */
+body.dark-mode .hero {
+    background: linear-gradient(135deg, #080817, #252052, #3b1b65) !important;
+}
+
+/* Secciones */
+body.dark-mode #sobre-mi,
+body.dark-mode #experiencia {
+    background: #1c1c35 !important;
+    color: white !important;
+}
+
+body.dark-mode #proyectos {
+    background: #17172e !important;
+    color: white !important;
+}
+
+/* Títulos */
+body.dark-mode section h2,
+body.dark-mode #sobre-mi h4,
+body.dark-mode .experience-card h4 {
+    color: #c4b5fd !important;
+}
+
+/* Descripciones */
+body.dark-mode #sobre-mi p,
+body.dark-mode .experience-card p {
+    color: #e0e0f0 !important;
+}
+
+/* Tarjetas de proyectos */
+body.dark-mode .project-card {
+    background: #292945 !important;
+    border-color: #555577 !important;
+}
+
+body.dark-mode .project-card h5,
+body.dark-mode .project-card p {
+    color: white !important;
+}
+
+/* Tarjetas de experiencia */
+body.dark-mode .experience-card {
+    background: #292945 !important;
+    border-color: #555577 !important;
+}
+
+body.dark-mode .experience-card i {
+    color: #c4b5fd !important;
+}
+
+/* Contacto */
+body.dark-mode #contacto {
+    background: linear-gradient(135deg, #080817, #252052) !important;
+}
+
+/* Formulario */
+body.dark-mode .form-control {
+    background: #292945 !important;
+    color: white !important;
+    border-color: #555577 !important;
+}
+
+body.dark-mode .form-control::placeholder {
+    color: #ccccdd !important;
+}
+
+/* Pie de página */
+body.dark-mode footer {
+    background: #080817 !important;
+    color: white !important;
+}
+
+/* =================================
+   DISEÑO PARA CELULARES
+================================= */
+
+@media (max-width: 768px) {
+
+    section {
+        padding: 60px 6%;
+    }
+
+    .hero h1 {
+        font-size: 36px;
+    }
+
+    .hero p {
+        font-size: 16px;
+    }
+
+    .profile-photo {
+        width: 170px;
+        height: 170px;
+    }
+
+    section h2 {
+        font-size: 29px;
+    }
+
+    .navbar .nav-item {
+        margin-top: 8px;
+    }
+
+    #themeToggle {
+        margin-top: 5px;
+    }
+}
+/* FORMULARIO DE CONTACTO */
+.contact-form {
+    max-width: 550px;
+    margin: 30px auto;
+}
+
+.contact-form .form-control {
+    width: 100%;
+    padding: 13px;
+    border-radius: 10px;
+}
+
+.contact-form button {
+    margin-top: 10px;
+}
+
+.contact-form button:disabled {
+    opacity: 0.7;
+    cursor: wait;
+}
+/* =================================
+   REDES SOCIALES
+================================= */
+
+.redes-sociales {
+    margin-top: 35px;
+    text-align: center;
+}
+
+.redes-sociales h3 {
+    color: white;
+    margin-bottom: 10px;
+    font-size: 24px;
+}
+
+.redes-sociales p {
+    color: #e9e7ff;
+    margin-bottom: 20px;
+}
+
+.redes-sociales .social-link {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    font-size: 32px;
+    margin: 10px;
+    color: white;
+    text-decoration: none;
+    transition: 0.3s ease;
+}
+
+.redes-sociales .whatsapp {
+    background-color: #25D366;
+}
+
+.redes-sociales .instagram {
+    background: linear-gradient(
+        45deg,
+        #feda75,
+        #fa7e1e,
+        #d62976,
+        #962fbf,
+        #4f5bd5
+    );
+}
+
+.redes-sociales .social-link:hover {
+    transform: translateY(-7px) scale(1.08);
+    box-shadow: 0 8px 20px rgba(0,0,0,0.25);
+}
